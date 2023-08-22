@@ -1,0 +1,66 @@
+# Ignore core WordPress files and directories
+wp-admin/
+wp-includes/
+
+# Except for wp-content, the rest of the root WordPress files can usually be ignored
+# since they don't change often and can be downloaded from the WordPress repository.
+# However, if you've made modifications, you might want to track them.
+index.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+license.txt
+readme.html
+
+# wp-config.php contains sensitive information and might differ between environments.
+wp-config.php
+
+# Server specific
+.htaccess
+error_log
+php.ini
+php_errorlog
+
+# Node modules if using any node-based tools
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore cache and temporary files
+wp-content/cache/
+wp-content/tmp/
+wp-content/uploads/
+
+# Ignore popular plugin cache and temp directories
+wp-content/plugins/hello.php
+wp-content/upgrade/
+
+# Backup and log files
+*.log
+*.bak
+*.tar*
+*.zip*
+
+# Ignore popular development tools' config files and directories
+.vscode/
+.idea/
+
+# If using a local development tool like Local by Flywheel
+local-config.php
+app/sql/
+
+# Any other plugins or themes you might not want to version (maybe premium ones)
+# Example:
+# wp-content/plugins/some-premium-plugin/
+# wp-content/themes/some-premium-theme/
